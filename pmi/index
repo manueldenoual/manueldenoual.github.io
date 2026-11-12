@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Manuel Denoual – Resume for PMI</title>
+  <meta name="description" content="Regional marketing leader with 18+ years across APAC – resume for the Regional Head of Marketing, APAC role at PMI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* Look and feel aligned with pmi.org.sg (PMI Singapore Chapter) */
+    :root {
+      --violet:      #4F17A8;   /* links, buttons, titles */
+      --violet-dark: #481AA1;   /* hover */
+      --tangerine:   #FF610F;   /* header rule, list icons */
+      --heading:     #212121;   /* menu / strong text */
+      --text:        #575757;   /* body copy */
+      --rule:        #CCCCCC;   /* section-title underline */
+      --line:        #DEE2E6;   /* row separators */
+      --card-border: rgba(0,0,0,.176);
+      --header-bg:   #F5F5F5;
+      --footer-bg:   #ECECEC;
+      --white:       #FFFFFF;
+    }
+
+    body {
+      font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    h1, h2, h3 { font-family: "Poppins", "Roboto", system-ui, sans-serif; }
+
+    a { color: var(--violet); text-decoration: none; }
+    a:hover { color: var(--violet-dark); text-decoration: underline; }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--header-bg);
+      border-top: 1px solid #D9D9D9;
+      border-bottom: 7px solid var(--tangerine);
+    }
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px 32px;
+    }
+    header h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 500;
+      color: var(--violet);
+      line-height: 1.2;
+    }
+    header .title {
+      font-size: clamp(15px, 2.4vw, 17px);
+      font-weight: 500;
+      color: var(--heading);
+      margin-top: 8px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      margin-top: 20px;
+    }
+    .contact-bar a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--violet);
+      border: 1px solid var(--violet);
+      color: var(--white);
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 14px;
+      line-height: 1.43;
+      transition: background-color .15s;
+    }
+    .contact-bar a:hover { background: var(--violet-dark); color: var(--white); text-decoration: none; }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 8px 20px 56px;
+    }
+
+    /* ── SECTION ── */
+    .section { padding-top: 36px; }
+    .section h2 {
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.4;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 20px;
+    }
+
+    /* ── PROFILE ── */
+    .profile-text { line-height: 1.75; }
+    .profile-text + .profile-text { margin-top: 12px; }
+
+    /* ── ENTRIES (jobs, entrepreneurship, volunteering) ── */
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px 16px;
+    }
+    .job-header h3 {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--violet);
+      line-height: 1.45;
+    }
+    .job-header h3 .role { font-weight: 400; }
+    .job-date {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--heading);
+      white-space: nowrap;
+    }
+    .job-scope {
+      font-size: 15px;
+      margin: 6px 0 8px;
+    }
+    .job ul {
+      margin: 4px 0;
+      padding-left: 20px;
+      font-size: 15.5px;
+    }
+    .job ul li { margin-bottom: 3px; }
+    .job ul li::marker { color: var(--violet); }
+    .achievements-label {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--heading);
+      margin: 12px 0 4px;
+    }
+    /* tangerine circle-check, as used in the site's membership lists */
+    .job ul.achievements { list-style: none; padding-left: 0; }
+    .job ul.achievements li {
+      position: relative;
+      padding-left: 26px;
+    }
+    .job ul.achievements li::before {
+      content: "";
+      position: absolute;
+      left: 0; top: .32em;
+      width: 17px; height: 17px;
+      background: no-repeat center / contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23FF610F'/%3E%3Cpath d='M7 12.5l3.2 3.2L17.5 8.4' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+    .job-divider { border: none; border-top: 1px solid var(--line); margin: 24px 0; }
+
+    /* ── CONDENSED LISTS (early career, certifications, education, languages) ── */
+    .sub-label {
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    .rows {
+      list-style: none;
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .rows li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px 16px;
+      padding: 11px 16px;
+      font-size: 15.5px;
+    }
+    .rows li + li { border-top: 1px solid var(--line); }
+    .rows .name { font-weight: 500; color: var(--heading); }
+    .rows .date { font-size: 14px; font-weight: 500; color: var(--heading); white-space: nowrap; }
+
+    /* ── SKILLS ── */
+    .skill-group + .skill-group { margin-top: 18px; }
+    .skill-group h3 {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--heading);
+      margin-bottom: 8px;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+    .tag {
+      background: var(--white);
+      border: 1px solid var(--violet);
+      color: var(--violet);
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      line-height: 1.43;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--footer-bg);
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .header-inner { padding: 28px 16px 24px; }
+      .container { padding: 0 16px 40px; }
+      .section { padding-top: 28px; }
+      .contact-bar a { font-size: 13.5px; padding: 5px 12px; }
+      .rows li { padding: 10px 12px; }
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      @page { margin: 14mm 14mm; }
+      body { background: #fff; color: #000; font-size: 10.5pt; line-height: 1.4; }
+      header { background: none; border: none; }
+      .header-inner { padding: 0 0 6pt; max-width: none; }
+      header h1, header .title { color: #000; }
+      .contact-bar { margin-top: 8pt; gap: 4pt 18pt; }
+      .contact-bar a { background: none; border: none; padding: 0; color: #000; font-size: 10.5pt; }
+      .contact-bar svg { display: none; }
+      .container { max-width: none; padding: 0; }
+      .section { padding-top: 12pt; }
+      .section h2 { color: #000; border-bottom: 1px solid #000; margin-bottom: 8pt; padding-bottom: 3pt; font-size: 13pt; }
+      .job-header h3, .sub-label, .skill-group h3, .achievements-label, .job-date,
+      .job-scope, .profile-text, .rows li, .rows .name, .rows .date, .tag, a { color: #000; }
+      .job ul li::marker { color: #000; }
+      .job-header h3 { font-size: 11.5pt; }
+      .job ul, .rows li, .job-scope { font-size: 10.5pt; }
+      .job ul.achievements li { padding-left: 16pt; }
+      .job ul.achievements li::before { filter: grayscale(1) brightness(.45); width: 10pt; height: 10pt; top: .25em; }
+      .job, .rows li, .skill-group { break-inside: avoid; page-break-inside: avoid; }
+      .section h2, .job-header, .sub-label, .achievements-label { break-after: avoid; page-break-after: avoid; }
+      .job-divider { border-top: 1px solid #999; margin: 10pt 0; }
+      .rows { border: none; border-radius: 0; }
+      .rows li { border: none !important; padding: 2pt 0; }
+      .tag { border-color: #999; padding: 1pt 7pt; }
+      footer { background: none; color: #000; padding: 12pt 0 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <h1>Manuel DENOUAL</h1>
+    <p class="title">Brand &amp; Performance Marketer · Data-Driven Strategist · Regional Team Builder</p>
+    <nav class="contact-bar" aria-label="Contact">
+      <a href="mailto:manuel.denoual@gmail.com">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        manuel.denoual@gmail.com
+      </a>
+      <a href="tel:+6590610217">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        +65 90610217
+      </a>
+      <a href="https://linkedin.com/in/mdenoual" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        linkedin.com/in/mdenoual
+      </a>
+      <a href="https://aheadgaining.com" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.93 6h-2.95a15.7 15.7 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14a8.2 8.2 0 0 1 0-4h3.38a16.5 16.5 0 0 0 0 4H4.26zm.81 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.99 7.99 0 0 1 5.07 16zm2.95-8H5.07a7.99 7.99 0 0 1 4.33-3.56A15.7 15.7 0 0 0 8.02 8zM12 19.96A14.1 14.1 0 0 1 10.09 16h3.82A14.1 14.1 0 0 1 12 19.96zM14.34 14H9.66a14.7 14.7 0 0 1 0-4h4.68a14.7 14.7 0 0 1 0 4zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14a16.5 16.5 0 0 0 0-4h3.38a8.2 8.2 0 0 1 0 4h-3.38z"/></svg>
+        aheadgaining.com
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- PROFILE -->
+  <section class="section" aria-labelledby="profile-heading">
+    <h2 id="profile-heading">Profile</h2>
+    <div class="profile-body">
+      <p class="profile-text">Regional marketing leader with 18+ years of experience driving customer growth through multi-market brand and performance media strategies, supported by investment decisions grounded in measurable incremental returns.</p>
+      <p class="profile-text">Launched the Singapore office of an independent agency from the ground up, owning the P&amp;L and growing annual revenue to over S$500K within 18 months through pipeline growth, data-led integrated strategies and client leadership.</p>
+      <p class="profile-text">Proven track record in building and managing multicultural marketing teams across APAC, fostering close collaboration with sales, cross-functional stakeholders and agency partners to deliver long-lasting business impact.</p>
+      <p class="profile-text">Founded Ahead Gaining, a consultancy helping consumer brands embed artificial intelligence across their digital marketing strategies, automate media workflows, structure company knowledge, and build AI fluency in their teams.</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" aria-labelledby="exp-heading">
+    <h2 id="exp-heading">Employment History</h2>
+
+    <!-- Precious Media -->
+    <article class="job">
+      <div class="job-header">
+        <h3>Precious Media – <span class="role">Fractional Performance and Intelligence Lead, APAC</span></h3>
+        <span class="job-date">06/2026 – Present</span>
+      </div>
+      <p class="job-scope">Boutique content marketing and digital commerce agency, part of the MSQ Group. Scope: AI and influencer marketing for Hilton, embedded with the Enterprise &amp; Brand Marketing team.</p>
+      <ul>
+        <li>Improving AI search discovery across priority platforms through AEO and GEO strategy.</li>
+        <li>Informing creative decisions with synthetic audience research across customer segments.</li>
+        <li>Evaluating AI-powered governance tools to ensure brand consistency across digital assets.</li>
+        <li>Scaling influencer marketing adoption to drive brand awareness and mid-funnel consideration.</li>
+      </ul>
+      <p class="achievements-label">Key achievement:</p>
+      <ul class="achievements">
+        <li>Rolled out a 12-creator influencer program across Australia, Japan and South Korea.</li>
+      </ul>
+    </article>
+
+    <hr class="job-divider" />
+
+    <!-- Hilton -->
+    <article class="job">
+      <div class="job-header">
+        <h3>Hilton – <span class="role">In-House Marketing Advisor, APAC</span></h3>
+        <span class="job-date">03/2025 – 04/2026</span>
+      </div>
+      <p class="job-scope">Global hospitality group with a portfolio of world-class hotel brands in 120+ countries. Scope: Commercial and paid media frameworks for a regional marketing program.</p>
+      <ul>
+        <li>Built the program's operating model from data analysis and feasibility assessment.</li>
+        <li>Partnered with the distribution team and agencies of record on channel and platform selection.</li>
+        <li>Forecasted marketing revenue uplift and margin gains for hotel owners over 5 years.</li>
+        <li>Applied agile ways of working to drive cross-functional collaboration and meet deadlines.</li>
+      </ul>
+      <p class="achievements-label">Key achievements:</p>
+      <ul class="achievements">
+        <li>Delivered a fully costed business case for executive board review, covering 200+ hotels.</li>
+        <li>Validated the program's commercial viability, with revenue projected at US$2B by 2030.</li>
+      </ul>
+    </article>
+
+    <hr class="job-divider" />
+
+    <!-- Neil Patel Digital -->
+    <article class="job">
+      <div class="job-header">
+        <h3>Neil Patel Digital – <span class="role">Managing Director, Singapore</span></h3>
+        <span class="job-date">04/2023 – 10/2024</span>
+      </div>
+      <p class="job-scope">Independent performance marketing agency offering services across paid and organic media. Scope: Launch of the Singapore office, with full ownership of the sales pipeline and client growth.</p>
+      <ul>
+        <li>Owned the agency's P&amp;L, setting growth priorities and investment decisions.</li>
+        <li>Drove lead generation, nurturing prospects through CRM and converting them into closed deals.</li>
+        <li>Developed full-funnel digital marketing strategies across SEO, SEM, and social media.</li>
+        <li>Leveraged media mix modeling to optimize budget allocation and demonstrate ROI.</li>
+      </ul>
+      <p class="achievements-label">Key achievements:</p>
+      <ul class="achievements">
+        <li>Scaled annual revenue over S$500K through new business and client retention.</li>
+        <li>Assembled a 5-member media team, setting client service and operational standards.</li>
+      </ul>
+    </article>
+
+    <hr class="job-divider" />
+
+    <!-- X / Twitter -->
+    <article class="job">
+      <div class="job-header">
+        <h3>X (fka Twitter) – <span class="role">Senior Client Partner, Large Customer Sales, Southeast Asia</span></h3>
+        <span class="job-date">06/2019 – 03/2023</span>
+      </div>
+      <p class="job-scope">Social media platform connecting people, creators, and brands through real-time conversations. Scope: Sales and revenue growth across a portfolio of blue-chip B2B advertisers.</p>
+      <ul>
+        <li>Positioned Twitter as a strategic media partner with senior executives and agency leads.</li>
+        <li>Designed social media strategies, activating CRM audiences for upsell and cross-sell.</li>
+        <li>Ran brand lift studies to measure campaign impact and inform media investment.</li>
+        <li>Led business reviews, translating large datasets into strategic recommendations.</li>
+      </ul>
+      <p class="achievements-label">Key achievements:</p>
+      <ul class="achievements">
+        <li>Grew annual advertising revenue to over US$10M, consistently exceeding sales targets.</li>
+        <li>Negotiated multi-million-dollar annual commercial agreements and joint business plans.</li>
+      </ul>
+    </article>
+
+    <hr class="job-divider" />
+
+    <!-- iProspect -->
+    <article class="job">
+      <div class="job-header">
+        <h3>iProspect – <span class="role">Client Leadership Director, APAC</span></h3>
+        <span class="job-date">10/2016 – 04/2019</span>
+      </div>
+      <p class="job-scope">Performance marketing agency, part of Dentsu Aegis Network, spanning media, content, and commerce. Scope: Revenue growth and client leadership across regional performance accounts.</p>
+      <ul>
+        <li>Defined annual business and integrated marketing plans drawing on Dentsu's agency network.</li>
+        <li>Collaborated with country teams to localize regional campaigns and brand messaging.</li>
+        <li>Streamlined marketing operations by automating performance optimization and reporting.</li>
+      </ul>
+      <p class="achievements-label">Key achievements:</p>
+      <ul class="achievements">
+        <li>Ran Accor's S$360K integrated brand campaign across display, mobile, DOOH, TV, radio and press.</li>
+        <li>Established PayPal's analytics and ad operations center of excellence across 5 markets.</li>
+      </ul>
+    </article>
+
+    <hr class="job-divider" />
+
+    <!-- Resolution Media -->
+    <article class="job">
+      <div class="job-header">
+        <h3>Resolution Media – <span class="role">Performance Marketing Director, APAC</span></h3>
+        <span class="job-date">08/2015 – 09/2016</span>
+      </div>
+      <p class="job-scope">Digital media agency under Omnicom Media Group, specializing in SEM, SEO, social, and display. Scope: Performance media practice and delivery operations across APAC.</p>
+      <ul>
+        <li>Spearheaded new business acquisition initiatives and expanded existing client partnerships.</li>
+        <li>Headed a team of 7 digital practitioners, ensuring accurate campaign delivery and analytical rigor.</li>
+        <li>Improved operational efficiency by establishing a tiered account model and service-level processes.</li>
+      </ul>
+      <p class="achievements-label">Key achievement:</p>
+      <ul class="achievements">
+        <li>Scaled the Google client account, lifting agency-managed media spend by over 80% YoY.</li>
+      </ul>
+    </article>
+
+    <hr class="job-divider" />
+
+    <!-- Wavemaker -->
+    <article class="job">
+      <div class="job-header">
+        <h3>Wavemaker (fka MEC) – <span class="role">Senior Performance Marketing Manager, APAC</span></h3>
+        <span class="job-date">10/2014 – 07/2015</span>
+      </div>
+      <p class="job-scope">Full-service media agency within GroupM, focusing on integrated media planning and brand strategy. Scope: Performance marketing for tier-1 regional accounts.</p>
+      <ul>
+        <li>Planned and executed brand and direct response campaigns across paid digital channels.</li>
+        <li>Directed a team of 6 media specialists, coaching and developing their marketing skills.</li>
+        <li>Managed technology and data vendor relationships, unlocking access to alpha trials.</li>
+      </ul>
+      <p class="achievements-label">Key achievement:</p>
+      <ul class="achievements">
+        <li>Delivered 2 agency-wide enablement sessions, increasing investment toward online channels.</li>
+      </ul>
+    </article>
+
+    <hr class="job-divider" />
+
+    <!-- Early Career -->
+    <div class="early-career">
+      <h3 class="sub-label">Early career in Paris and London:</h3>
+      <ul class="rows">
+        <li><span><span class="name">IG Markets</span> – PPC Manager, Europe</span> <span class="date">11/2011 – 10/2014</span></li>
+        <li><span><span class="name">Fortuneo</span> – Digital Marketing Manager, France</span> <span class="date">10/2009 – 06/2011</span></li>
+        <li><span><span class="name">Audible</span> – Online Customer Acquisition, France</span> <span class="date">09/2008 – 08/2009</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" aria-labelledby="skills-heading">
+    <h2 id="skills-heading">Skills</h2>
+    <div class="skill-group">
+      <h3>Leadership</h3>
+      <ul class="tags">
+        <li class="tag">Stakeholder alignment</li>
+        <li class="tag">Cross-functional collaboration</li>
+        <li class="tag">Agency &amp; vendor management</li>
+        <li class="tag">Team coaching</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h3>Marketing</h3>
+      <ul class="tags">
+        <li class="tag">Integrated planning</li>
+        <li class="tag">Campaign localization</li>
+        <li class="tag">Brand awareness</li>
+        <li class="tag">AI search</li>
+        <li class="tag">Paid media</li>
+        <li class="tag">Lead generation</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h3>Data</h3>
+      <ul class="tags">
+        <li class="tag">CRM</li>
+        <li class="tag">KPI framework</li>
+        <li class="tag">Performance reporting</li>
+        <li class="tag">Trend analysis</li>
+        <li class="tag">Media mix modeling</li>
+        <li class="tag">Revenue attribution</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" aria-labelledby="cert-heading">
+    <h2 id="cert-heading">Certifications</h2>
+    <ul class="rows">
+      <li><span><span class="name">Scrum Alliance</span> – The AI-Powered Scrum Master</span> <span class="date">09/2026</span></li>
+      <li><span><span class="name">Google</span> – AI-Powered Performance Ads Certification; AI for Brainstorming and Planning</span> <span class="date">04/2026</span></li>
+      <li><span><span class="name">The Trade Desk Edge Academy</span> – Data-Driven Planning; Data Marketplaces and Identity Transparency</span> <span class="date">10/2024</span></li>
+    </ul>
+  </section>
+
+  <!-- ENTREPRENEURSHIP -->
+  <section class="section" aria-labelledby="entre-heading">
+    <h2 id="entre-heading">Entrepreneurship</h2>
+    <article class="job">
+      <div class="job-header">
+        <h3>Ahead Gaining – <span class="role">Founder &amp; Principal Consultant</span></h3>
+        <span class="job-date">04/2026 – Present</span>
+      </div>
+      <p class="job-scope">Consultancy acting as a business strategist for consumer brands, embedding AI across marketing, processes, and people. <a href="https://aheadgaining.com" target="_blank" rel="noopener">aheadgaining.com</a></p>
+    </article>
+  </section>
+
+  <!-- VOLUNTEERING -->
+  <section class="section" aria-labelledby="vol-heading">
+    <h2 id="vol-heading">Volunteering</h2>
+    <article class="job">
+      <div class="job-header">
+        <h3>The One Hour Project – <span class="role">Digital &amp; Go-to-Market Advisor</span></h3>
+        <span class="job-date">11/2024 – Present</span>
+      </div>
+      <p class="job-scope">Network of marketing and creative professionals supporting nonprofits across Asia through digital-for-good initiatives.</p>
+    </article>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" aria-labelledby="edu-heading">
+    <h2 id="edu-heading">Education</h2>
+    <ul class="rows">
+      <li><span><span class="name">ESG School of Business</span> – Master of Business Administration in Tourism and Hospitality Management</span> <span class="date">10/2008</span></li>
+    </ul>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section class="section" aria-labelledby="lang-heading">
+    <h2 id="lang-heading">Languages</h2>
+    <ul class="rows">
+      <li><span><span class="name">English</span> – Full professional proficiency</span></li>
+      <li><span><span class="name">French</span> – Native proficiency</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  Manuel Denoual · Singapore · <a href="mailto:manuel.denoual@gmail.com">manuel.denoual@gmail.com</a>
+</footer>
+
+</body>
+</html>
